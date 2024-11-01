@@ -1,0 +1,85 @@
+/**
+ * Slickity Slide Templates
+ *
+ * Contains styles for all of the predefined Slickity slide templates.
+ */
+
+/* Main, Thumbnail, Lightbox - Default Template */
+.slickity-main-template--default,
+.slickity-thumbnail-template--default {
+  margin-bottom: 1rem;
+}
+
+.slickity-main-template--default .slick-prev,
+.slickity-main-template--default .slick-next,
+.slickity-thumbnail-template--default .slick-prev,
+.slickity-thumbnail-template--default .slick-next,
+.slickity-lightbox-template--default .slick-prev,
+.slickity-lightbox-template--default .slick-next {
+  height: 30px;
+  width: 30px;
+  z-index: 9;
+}
+
+.slickity-main-template--default .slick-prev,
+.slickity-thumbnail-template--default .slick-prev,
+.slickity-lightbox-template--default .slick-prev {
+  left: 1rem;
+}
+
+.slickity-main-template--default .slick-next,
+.slickity-thumbnail-template--default .slick-next,
+.slickity-lightbox-template--default .slick-next {
+  right: 1rem;
+}
+
+.slickity-main-template--default .slick-prev:before,
+.slickity-main-template--default .slick-next:before,
+.slickity-thumbnail-template--default .slick-prev:before,
+.slickity-thumbnail-template--default .slick-next:before,
+.slickity-lightbox-template--default .slick-prev:before,
+.slickity-lightbox-template--default .slick-next:before {
+  font-size: 30px;
+}
+
+/* Main - Default Template */
+
+/* Main Slide, Lightbox Slide - Default Template */
+.slickity-slide-main--default {
+  position: relative;
+}
+
+.slickity-slide-main--default .slickity-slide__image img,
+.slickity-slide-lightbox--default .slickity-slide__image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.slickity-slide-main--default .slickity-slide__caption,
+.slickity-slide-lightbox--default .slickity-slide__caption {
+  font-size: .8rem;
+  padding: 1rem;
+}
+
+.slickity-slide-main--default .slickity-slide__caption p:last-child,
+.slickity-slide-lightbox--default .slickity-slide__caption p:last-child {
+  margin-bottom: 0;
+}
+
+@media print, screen and (min-width: 768px) {
+  .slickity-slide-main--default .slickity-slide__caption {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+/* Thumbnail Slide - Default Template */
+.slickity-slide-thumbnail--default .slickity-slide__image {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+/* Lightbox - Default Template */
